@@ -8,6 +8,7 @@
     <title>Exercice 08</title>
   </head>
   <body>
+    <div id="container"></div>
     <hr />
     <h1>Créer un calendrier</h1>
     <div class="task__formatted">
@@ -56,5 +57,28 @@
         >
       </p>
     </div>
+
+    <script>
+        let container = document.querySelector('#container');
+        let table = document.createElement('table');
+        table.style.borderCollapse = 'collapse';
+        
+        let days = ['MO', 'TU', 'WE', 'TH', 'FR', 'SA', 'SU'];
+        
+        container.append(table);
+        table.append(document.createElement('th'));
+        table.append(document.createElement('tr'));
+        
+        for (let i = 0; i < days.length; i++) {
+            let td = document.createElement('td');
+            td.textContent = days[i];
+            td.style.background = 'lightgray';
+            td.style.border = '1px solid black';
+            td.style.padding = '2px 4px';
+
+            document.querySelector('#container table th').append(td);
+        }
+
+    </script>
   </body>
 </html>
