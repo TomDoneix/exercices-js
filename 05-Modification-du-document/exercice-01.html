@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercice 01</title>
+  </head>
+  <body>
+
+    <p id="container"></p>
+
+    <p>Nous avons un élément DOM vide elem et une chaîne de caractères text.</p>
+    <p>Lesquelles de ces 3 commandes feront exactement la même chose ?</p>
+    <ul>
+      <li>elem.append(document.createTextNode(text))</li>
+      <li>elem.innerHTML = text</li>
+      <li>elem.textContent = text</li>
+    </ul>
+
+    <a href="https://fr.javascript.info/task/createtextnode-vs-innerhtml"
+      >createTextNode vs innerHTML vs textContent</a
+    >
+
+    <script>
+        let container = document.querySelector('#container');
+        container.style.height = "50px";
+        container.style.backgroundColor = "lightgrey";
+        let text = 'Un texte <strong>bold</strong> pour voir.';
+
+        // container.append(document.createTextNode(text));
+        // container.innerHTML = text; 
+        // container.textContent = text;
+    </script>
+  </body>
+</html>
