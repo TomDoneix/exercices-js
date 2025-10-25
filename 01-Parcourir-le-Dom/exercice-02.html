@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
     <title>Exercice 02</title>
     <style>
       table {
@@ -55,16 +55,25 @@
         <td>5:5</td>
       </tr>
     </table>
-    
-    <a href="https://fr.javascript.info/task/select-diagonal-cells">Sélectionner toutes les cellules diagonales</a>
+
+    <hr />
+    <p>Le résultat devrait être :</p>
+
+    <div class="code-result">
+      <div class="code-result__toolbar toolbar"></div>
+      <iframe
+        class="code-result__iframe"
+        data-trusted="1"
+        style="height: 180px"
+        src="https://fr.js.cx/task/select-diagonal-cells/solution/"
+      ></iframe>
+    </div>
+
+    <a href="https://fr.javascript.info/task/select-diagonal-cells"
+      >Sélectionner toutes les cellules diagonales</a
+    >
 
     <script>
-        let trs = document.querySelectorAll('tr');
-        
-        for (let i = 0; i < trs.length; i++) {
-            let redTd = trs[i].children[i];
-            redTd.style.background = 'red';
-        }
     </script>
   </body>
 </html>

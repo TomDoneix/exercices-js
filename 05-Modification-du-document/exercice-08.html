@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="#" type="image/x-icon" />
     <title>Exercice 08</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      td, th {
+        border: 1px solid;
+        padding: 2px 4px;
+        text-align: center;
+      }
+      th {
+        background: lightgrey;
+      }
+    </style>
   </head>
   <body>
     <div id="container"></div>
@@ -61,22 +74,34 @@
     <script>
         let container = document.querySelector('#container');
         let table = document.createElement('table');
-        table.style.borderCollapse = 'collapse';
-        
-        let days = ['MO', 'TU', 'WE', 'TH', 'FR', 'SA', 'SU'];
         
         container.append(table);
-        table.append(document.createElement('th'));
         table.append(document.createElement('tr'));
-        
-        for (let i = 0; i < days.length; i++) {
-            let td = document.createElement('td');
-            td.textContent = days[i];
-            td.style.background = 'lightgray';
-            td.style.border = '1px solid black';
-            td.style.padding = '2px 4px';
 
-            document.querySelector('#container table th').append(td);
+        for (let i = 0; i < 6; i++) {
+          let tr = document.createElement('tr');
+          document.querySelector('#container table').append(tr);
+        }
+
+        let trs = document.querySelectorAll('#container tr');
+
+        let days = ['MO', 'TU', 'WE', 'TH', 'FR', 'SA', 'SU'];
+        let dataDays = ['-', '-', '-', '-', '-', '-', '-'];
+        
+        defineTD(trs[0], days, 'th');
+
+        for (let i = 1; i < 6; i++) {
+          defineTD(trs[i], dataDays, 'td');
+        }
+
+        function defineTD (tr, data, typeCel) {
+          for (let i = 0; i < data.length; i++) {
+            cel = document.createElement(typeCel);
+            cel.textContent = data[i];
+
+            tr.append(cel);
+            console.log(data[i]);
+          }
         }
 
     </script>
