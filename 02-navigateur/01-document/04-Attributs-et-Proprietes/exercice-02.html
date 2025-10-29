@@ -9,7 +9,7 @@
   </head>
   <body>
     <a name="list">the list</a>
-    <ul>
+    <ul id="list">
       <li><a href="http://google.com">http://google.com</a></li>
       <li><a href="/tutorial">/tutorial.html</a></li>
       <li><a href="local/path">local/path</a></li>
@@ -28,6 +28,25 @@
 
     <p>Son href contient ://</p>
     <p>Mais ne commence pas par http://internal.com.</p>
+
+    <p>La liste doit être comme ça :</p>
+
+    <ul>
+      <li>
+        <a href="http://google.com" style="color: orange">http://google.com</a>
+      </li>
+      <li><a href="/tutorial">/tutorial.html</a></li>
+      <li><a href="local/path">local/path</a></li>
+      <li>
+        <a href="ftp://ftp.com/my.zip" style="color: orange"
+          >ftp://ftp.com/my.zip</a
+        >
+      </li>
+      <li>
+        <a href="http://nodejs.org" style="color: orange">http://nodejs.org</a>
+      </li>
+      <li><a href="http://internal.com/test">http://internal.com/test</a></li>
+    </ul>
 
     <a href="https://fr.javascript.info/task/yellow-links"
       >Rendre les liens externes orange</a

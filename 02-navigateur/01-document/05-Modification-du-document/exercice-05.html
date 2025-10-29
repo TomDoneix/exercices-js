@@ -4,12 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
     <title>Exercice 03</title>
   </head>
   <body>
     <div id="container"></div>
 
+    <hr />
+    <p>
+      Écrivez une fonction createTree qui crée une liste imbriquée ul/li à
+      partir de l’objet imbriqué.
+    </p>
+    <p>Le résultat (arbre) devrait ressembler à ceci :</p>
+    <div class="code-result">
+      <div class="code-result__toolbar toolbar"></div>
+      <iframe
+        class="code-result__iframe"
+        data-trusted="1"
+        style="height: 300px"
+        src="https://fr.js.cx/task/create-object-tree/build-tree-dom/"
+      ></iframe>
+    </div>
     <a href="https://fr.javascript.info/task/create-object-tree"
       >Créer un arbre à partir de l'objet</a
     >
@@ -30,17 +45,17 @@
             "apple tree": {},
             magnolia: {
               test: {},
-              truc: {}
+              truc: {},
             },
           },
         },
       };
 
+      let container = document.getElementById("container");
+
+      // createTree(container, data);
+
       
-
-      let container = document.getElementById('container');
-      createTree(container, data);
-
     </script>
   </body>
 </html>

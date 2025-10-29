@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Exercice 01</title>
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <hr />
+    <p>Il y a un objet ladder qui permet de monter et descendre :</p>
+    <code>
+      let ladder = { <br />
+      step: 0, <br />
+      up() { <br />
+      this.step++; <br />
+      }, <br />
+      down() { <br />
+      this.step--; <br />
+      }, <br />
+      showStep: function() { // affiche l'étape en cours <br />
+      alert( this.step ); <br />
+      } <br />
+      };
+    </code>
+    <p>
+      Maintenant, si nous devons faire plusieurs appels en séquence, nous
+      pouvons le faire comme ceci :
+    </p>
+    <code>
+      ladder.up(); <br />
+      ladder.up(); <br />
+      ladder.down(); <br />
+      ladder.showStep(); // 1 <br />
+      ladder.down(); <br />
+      ladder.showStep(); // 0 <br />
+    </code>
+    <p>
+      Modifiez le code de up et down pour rendre les appels chaînables, comme
+      ceci :
+    </p>
+    <code>
+      ladder.up().up().down().showStep().down().showStep(); // shows 1 then 0
+    </code>
+
+    <p>
+      <a href="https://fr.javascript.info/task/chain-calls">Chaining</a>
+    </p>
+
+    <script>
+      let ladder = {
+        step: 0,
+        up() {
+          this.step++;
+        },
+        down() {
+          this.step--;
+        },
+        showStep: function () {
+          // affiche l'étape en cours
+          alert(this.step);
+        },
+      };
+
+      ladder.up();
+      ladder.up();
+      ladder.down();
+      ladder.showStep();
+      ladder.down();
+      ladder.showStep();
+
+      //ladder.up().up().down().showStep().down().showStep();
+    </script>
+  </body>
+</html>

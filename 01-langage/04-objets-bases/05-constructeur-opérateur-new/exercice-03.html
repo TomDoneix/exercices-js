@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Exercice 01</title>
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <hr />
+    <div class="task__formatted">
+      <p>
+        Créer une fonction constructeur <code>Accumulator(startingValue)</code>.
+      </p>
+      <p>L’objet qu’il crée devrait :</p>
+      <ul>
+        <li>
+          Stocker la “valeur actuelle” dans la propriété <code>value</code>. La
+          valeur de départ est définie sur l’argument du constructeur
+          <code>startingValue</code>.
+        </li>
+        <li>
+          La méthode <code>read()</code> devrait utiliser
+          <code>prompt</code> pour lire un nouveau numéro et l’ajouter à
+          <code>value</code>.
+        </li>
+      </ul>
+      <p>
+        En d’autres termes, la propriété <code>value</code> est la somme de
+        toutes les valeurs entrées par l’utilisateur avec la valeur initiale
+        <code>startingValue</code>.
+      </p>
+      <code>
+        let accumulator = new Accumulator(1); // valeur initiale 1 <br />
+        <br />
+        accumulator.read(); // ajoute la valeur entrée par l'utilisateur <br />
+        accumulator.read(); // ajoute la valeur entrée par l'utilisateur <br />
+        <br />
+        alert(accumulator.value); // affiche la somme de ces valeurs
+      </code>
+    </div>
+
+    <p>
+      <a href="https://fr.javascript.info/task/accumulator"
+        >Créer un nouvel accumulateur</a
+      >
+    </p>
+
+    <script>
+
+    </script>
+  </body>
+</html>
