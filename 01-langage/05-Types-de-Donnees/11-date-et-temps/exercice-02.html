@@ -36,12 +36,16 @@
     <script>
         let container = document.querySelector('#container');
         let date = new Date(2015, 0, 2);
+        
+        let firstP = document.createElement('p');
+        firstP.innerHTML = date;
+        container.appendChild(firstP);
 
-        container.innerHTML = getDateAgo(date, 1);
+        let lastP = document.createElement('p');
+        lastP.innerHTML = getDateAgo(date, 365);
+        container.appendChild(lastP);
 
-        function getDateAgo(date, days) {
-            
-        }
+        
     </script>
   </body>
 </html>
