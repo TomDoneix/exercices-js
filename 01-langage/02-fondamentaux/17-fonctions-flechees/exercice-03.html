@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Exercice 03</title>
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <hr />
+    <p>
+      Remplacez les expressions de fonction par des fonctions fléchées dans le
+      code ci-dessous :
+    </p>
+    <p>Par exemple</p>
+    <code>
+      function ask(question, yes, no) { <br />
+      if (confirm(question)) yes(); <br />
+      else no(); <br />
+      } <br />
+      <br />
+      ask( <br />
+      "Do you agree?", <br />
+      function() { alert("You agreed."); }, <br />
+      function() { alert("You canceled the execution."); } <br />
+      );
+    </code>
+
+    <p>
+      <a href="https://fr.javascript.info/task/rewrite-arrow"
+        >Réécrire avec les fonctions fléchées</a
+      >
+    </p>
+
+    <script>
+      function ask(question, yes, no) {
+        if (confirm(question)) yes();
+        else no();
+      }
+
+      // Expressions de fonction à remplacer par des fonctions fléchées
+      // ask(
+      //   "Do you agree?",
+      //   function () {
+      //     alert("You agreed.");
+      //   },
+      //   function () {
+      //     alert("You canceled the execution.");
+      //   }
+      // );
+
+    </script>
+  </body>
+</html>
