@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Exercice 01</title>
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <hr />
+    <p>Selon la documentation, Math.round et toFixed arrondissent tous les deux au nombre le plus proche : 0..4 arrondi par défaut (à la baisse) tantdis que 5..9 arrondi par excès (à la hausse).</p>
+    <p>Par exemple</p>
+    <code>
+      alert( 1.35.toFixed(1) ); // 1.4
+    </code>
+    <p>Dans l’exemple similaire ci-dessous, pourquoi est-ce que 6.35 est arrondi à 6.3 et non 6.4 ?</p>
+    <code>
+      alert( 6.35.toFixed(1) ); // 6.3
+    </code>
+    <p>Comment arrondir 6.35 de la bonne manière ?</p>
+
+    <p>
+      <a
+        href="https://fr.javascript.info/task/why-rounded-down"
+        >Pourquoi 6.35.toFixed(1) == 6.3 ?</a
+      >
+    </p>
+
+    <script>
+      console.log( 1.35.toFixed(1) );
+      console.log( 6.35.toFixed(1) );
+      
+    </script>
+  </body>
+</html>
