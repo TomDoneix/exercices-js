@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Exercice 00</title>
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <hr />
+    <p>Quel est la sortie des console.log()</p>
+
+    <p>
+      <a href="https://fr.javascript.info/object-copy">Les références d'objet et leur copie</a>
+    </p>
+
+    <script>
+      let message = "Un message";
+      let copieMessage = message;
+
+      message = "Message transformé";
+      // console.log(copieMessage);
+
+      let obj1 = {
+        name: "Denoix",
+        lastname: "Olivier",
+        age: 57
+      }
+
+      let obj2 = obj1;
+
+      obj2.name = "Primus"
+      // console.log(obj1);
+      // console.log(obj1 === obj2);
+    </script>
+  </body>
+</html>

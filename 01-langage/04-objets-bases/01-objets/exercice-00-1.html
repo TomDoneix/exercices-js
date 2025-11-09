@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Exercice 00</title>
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <hr />
+    <p>Transformer la fonction en utilisant les propriétés abrégées</p>
+
+    <p>
+      <a href="https://fr.javascript.info/object#valeur-de-propriete-abregee-property-value-shorthand">Valeur de propriété abrégée </a>
+    </p>
+
+    <script>
+      function makeUser(name, age) {
+        return {
+          name: name,
+          age: age,
+        };
+      }
+
+      let user = makeUser("John", 30);
+      console.log(user.test === undefined);
+    </script>
+  </body>
+</html>

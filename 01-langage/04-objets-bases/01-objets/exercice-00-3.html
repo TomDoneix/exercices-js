@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Exercice 00</title>
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <hr />
+    <p>Comment les objets vont-ils être ordonnés ?</p>
+    <p>Comment changer ce comportement ?</p>
+
+    <p>
+      <a
+        href="https://fr.javascript.info/object#ordonne-comme-un-objet"
+        >Ordonné comme un objet</a
+      >
+    </p>
+
+    <script>
+      let codes = {
+        "49": "Germany",
+        "41": "Switzerland",
+        "44": "Great Britain",
+        "1": "USA",
+        test: "truc",
+        abc: "machin"
+      }
+
+      let ol = document.createElement("ol");
+      document.querySelector("#container").append(ol);
+
+      for ( let key in codes ) {
+        let li = document.createElement('li');
+        li.innerHTML = codes[key];
+        // ol.append(li)
+      }
+    </script>
+  </body>
+</html>

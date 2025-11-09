@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Exercice 01</title>
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <hr />
+
+    <p>Rajouter un champ dans user qui soit invisible dans le boucle</p>
+    <p>Créer une alerte pour y accéder directement.</p>
+
+    <p>
+      <a href="https://fr.javascript.info/symbol"
+        >Type symbole</a
+      >
+    </p>
+
+    <script>
+
+      let user = {
+        name: 'John',
+        age: 30,
+      }
+
+      for ( let key in user ) console.log(key);
+
+      // alert( "Direct : " + user[id] );
+    </script>
+  </body>
+</html>
