@@ -33,6 +33,21 @@
     </p>
 
     <script>
+      let ul = document.createElement('ul');
+      document.querySelector('#container').append(ul);
+
+      for ( let i = 0; i < 1000; i++ ) {
+        let min = 2;
+        let max = 7;
+
+        let li = document.createElement('li');
+        li.innerHTML = randomInteger(min, max);
+        
+        ul.append(li);
+      }
+
+      function randomInteger(min, max) {
+      }
     </script>
   </body>
 </html>
