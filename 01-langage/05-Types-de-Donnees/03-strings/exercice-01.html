@@ -11,27 +11,20 @@
     <div id="container"></div>
 
     <hr />
-    <p>
-      La fonction intégrée Math.random() crée une valeur aléatoire de 0 à 1 (1
-      non compris).
-    </p>
-    <p>
-      Ecrivez la fonction random(min, max) pour générer un nombre aléatoire compris entre min et max (max non compris).
-    </p>
-    <p>Quelques exemples :</p>
+    <p>Écrire une fonction ucFirst(str) qui retourne la chaîne de caractères str avec le premier caractère majuscule, par exemple :</p>
     <code>
-      alert( random(1, 5) ); // 1.2345623452 <br />
-      alert( random(1, 5) ); // 3.7894332423 <br />
-      alert( random(1, 5) ); // 4.3435234525
+      ucFirst("john") == "John";
     </code>
 
     <p>
-      <a href="https://fr.javascript.info/task/random-min-max"
-        >Un nombre aléatoire de min à max</a
+      <a href="https://fr.javascript.info/task/ucfirst"
+        >Mettre en majuscule le premier caractère</a
       >
     </p>
 
     <script>
+      document.querySelector('#container').innerHTML = ucFirst('olivier');
+
     </script>
   </body>
 </html>
