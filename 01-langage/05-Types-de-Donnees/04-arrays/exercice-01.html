@@ -6,29 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="#" type="image/x-icon" />
     <title>Exercice 01</title>
+    <link rel="stylesheet" href="../../../00-styles/style.css">
   </head>
   <body>
     <div id="container"></div>
 
     <hr />
-    <p>
-      Nous avons un coût sous la forme "$120". C’est-à-dire que le signe dollar
-      commence, puis le nombre.
-    </p>
-    <p>
-      Créer une fonction extractCurrencyValue(str) qui extrait la valeur
-      numérique d’une telle chaîne de caractères et la renvoit en additionnant un nombre (la sortie doit être un nombre).
-    </p>
-    <p>Par exemple :</p>
-    <code> alert( extractCurrencyValue('$120') === 120 ); // true </code>
+
+    <ol>
+      <li>Ajouter un item à la fin du tableau</li>
+      <li>Supprimer un item à la fin du tableau</li>
+      <li>Ajouter un item au début du tableau</li>
+      <li>Supprimer un item au début du tableau</li>
+    </ol>
+    <hr>
+    <ol>
+      <li>Ajouter au début et à la fin plusieurs item</li>
+      <li>Quelles sont les méthodes les plus rapides ?</li>
+      <li>Quel est le moyen le plus simple pour vider un tableau ?</li>
+    </ol>
 
     <p>
-      <a href="https://fr.javascript.info/task/extract-currency"
-        >Extraire l'argent</a
+      <a href="https://fr.javascript.info/array#les-methodes-pop-push-shift-unshift"
+        >Ajouter / supprimer des élements à un tableau</a
       >
     </p>
 
     <script>
+      let arr = [ 'Pommes', 'Orange', 'Raisin' ];
+      
+
+      let container = document.querySelector('#container');
+      container.innerHTML = arr;
     </script>
   </body>
 </html>

@@ -5,27 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="#" type="image/x-icon" />
-    <title>Exercice 01</title>
+    <title>Exercice 05</title>
     <link rel="stylesheet" href="../../../00-styles/style.css" />
   </head>
   <body>
     <div id="container"></div>
 
     <hr />
-    <p>Écrire une fonction ucFirst(str) qui retourne la chaîne de caractères str avec le premier caractère majuscule, par exemple :</p>
-    <code>
-      ucFirst("john") == "John";
-    </code>
+
+    <p>Quel est le résultat ? Et pourquoi ?</p>
 
     <p>
-      <a href="https://fr.javascript.info/task/ucfirst"
-        >Mettre en majuscule le premier caractère</a
+      <a href="https://fr.javascript.info/task/call-array-this"
+        >Appel dans un contexte de tableau</a
       >
     </p>
 
     <script>
-      document.querySelector('#container').innerHTML = ucFirst('olivier');
+      let arr = ["a", "b"];
 
-</script>
+      arr.push(function () {
+        alert(this);
+      });
+
+      // arr[2](); // ?
+    </script>
   </body>
 </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Exercice 03</title>
+    <link rel="stylesheet" href="../../../00-styles/style.css" />
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <hr />
+
+    <p>Qu’est-ce que ce code va montrer ?</p>
+
+    <code>
+      let fruits = ["Apples", "Pear", "Orange"]; <br />
+      <br />
+      // pousser une nouvelle valeur dans la "copie" br let shoppingCart =
+      fruits; <br />
+      shoppingCart.push("Banana"); <br />
+      <br />
+      // Qu'y a-t-il dans fruits ? <br />
+      alert( fruits.length ); // ?
+    </code>
+    <p>
+      <a href="https://fr.javascript.info/task/item-value"
+        >Le tableau est-il copié ?</a
+      >
+    </p>
+
+    <script>
+      let fruits = ["Apples", "Pear", "Orange"];
+
+      // pousser une nouvelle valeur dans la "copie"
+      let shoppingCart = fruits;
+      shoppingCart.push("Banana");
+
+      // Qu'y a-t-il dans fruits ?
+      // console.log(fruits.length); // ?
+      // console.log(fruits); // ?
+    </script>
+  </body>
+</html>

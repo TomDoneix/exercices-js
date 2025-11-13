@@ -1,0 +1,20 @@
+body {
+  background: #232529;
+  color: lightgray;
+  font-family: Arial, Helvetica, sans-serif, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  color: lightskyblue;
+}
+
+code, pre {
+  display: block;
+  padding: 1rem;
+  background: #282A36;
+}
+
+#container {
+  min-height: 2rem;
+  background: #282A36;
+}

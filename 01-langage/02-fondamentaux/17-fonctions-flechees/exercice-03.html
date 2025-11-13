@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="#" type="image/x-icon" />
     <title>Exercice 03</title>
+    <link rel="stylesheet" href="../../../00-styles/style.css" />
   </head>
   <body>
     <div id="container"></div>
@@ -16,18 +17,18 @@
       code ci-dessous :
     </p>
     <p>Par exemple</p>
-    <code>
-      function ask(question, yes, no) { <br />
-      if (confirm(question)) yes(); <br />
-      else no(); <br />
-      } <br />
-      <br />
-      ask( <br />
-      "Do you agree?", <br />
-      function() { alert("You agreed."); }, <br />
-      function() { alert("You canceled the execution."); } <br />
+    <pre>
+      function ask(question, yes, no) {
+        if (confirm(question)) yes();
+        else no();
+      }
+     
+      ask(
+        "Do you agree?",
+        function() { alert("You agreed."); },
+        function() { alert("You canceled the execution."); }
       );
-    </code>
+    </pre>
 
     <p>
       <a href="https://fr.javascript.info/task/rewrite-arrow"
@@ -40,6 +41,7 @@
         if (confirm(question)) yes();
         else no();
       }
+
 
       // Expressions de fonction à remplacer par des fonctions fléchées
       // ask(
