@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Exercice 06</title>
+    <link rel="stylesheet" href="../../../00-styles/style.css" />
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <hr />
+
+    <p>Vous avez un tableau d’objets user, chacun ayant user.name. Écrivez le code qui le convertit en un tableau de noms.</p>
+    <p>Par exemple :</p>
+
+    <pre>
+      let john = { name: "John", age: 25 };
+      let pete = { name: "Pete", age: 30 };
+      let mary = { name: "Mary", age: 28 };
+
+      let users = [ john, petemary ];
+
+      let names = /* ... votre code */
+
+      alert( names ); // John, Pete, Mary
+    </pre>
+
+
+    <p>
+      <a href="https://fr.javascript.info/task/array-get-names">Map en noms</a>
+    </p>
+
+    <script>
+      let john = { name: "John", age: 25 };
+      let pete = { name: "Pete", age: 30 };
+      let mary = { name: "Mary", age: 28 };
+
+      let users = [ john, pete, mary ];
+
+      let names = "Le code en une ligne (seulement les names)";
+
+      console.log( names );
+    </script>
+  </body>
+</html>

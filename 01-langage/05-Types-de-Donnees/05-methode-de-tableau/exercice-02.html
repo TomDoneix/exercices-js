@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Exercice 02</title>
+    <link rel="stylesheet" href="../../../00-styles/style.css" />
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <hr />
+
+    <p>
+      Ecrivez une fonction filterRange(arr, a, b) qui obtient un tableau arr,
+      recherche les éléments avec des valeurs supérieures ou égales à a et
+      inférieures ou égales à b et retourne un résultat sous forme de tableau.
+    </p>
+    <p>
+      La fonction ne doit pas modifier le tableau. Elle doit juste retourner le
+      nouveau tableau.
+    </p>
+    <p>Exemples :</p>
+
+    <pre>
+      let arr = [5, 3, 8, 1];
+      let filtered = filterRange(arr, 1, 4);
+
+      console.log( filtered ); // 3,1 (valeurs correspondantes)
+      console.log( arr ); // 5,3,8,1 (non modifié)
+    </pre>
+
+
+    <p>
+      <a href="https://fr.javascript.info/task/filter-range">Filter range</a>
+    </p>
+
+    <script>
+      let arr = [5, 3, 8, 1];
+      let filtered = filterRange(arr, 1, 4);
+
+      console.log( filtered );
+      console.log( arr );
+    </script>
+  </body>
+</html>

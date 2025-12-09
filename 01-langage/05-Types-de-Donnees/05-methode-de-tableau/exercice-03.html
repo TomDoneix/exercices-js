@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Exercice 02</title>
+    <link rel="stylesheet" href="../../../00-styles/style.css" />
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <hr />
+
+    <p>Ecrivez une fonction filterRangeInPlace(arr, a, b) qui obtient un tableau arr et en supprime toutes les valeurs, sauf celles comprises entre a et b. Le test est : a ≤ arr[i] ≤ b.</p>
+    <p>La fonction doit juste modifier que le tableau. Elle ne doit rien retourner.</p>
+    <p>Exemples :</p>
+
+    <pre>
+      let arr = [5, 3, 8, 1];
+
+      filterRangeInPlace(arr, 1, 4); // supprime les nombres qui ne sont pas entre 1 et 4
+
+      console.log( arr ); // [3, 1]
+    </pre>
+
+
+    <p>
+      <a href="https://fr.javascript.info/task/filter-range-in-place">Filter range "in place"</a>
+    </p>
+
+    <script>
+      let arr = [5, 3, 8, 1];
+
+      filterRangeInPlace(arr, 1, 4);
+      
+      console.log(arr);
+      
+      function filterRangeInPlace (arr ,a ,b ) {
+      }
+    </script>
+  </body>
+</html>

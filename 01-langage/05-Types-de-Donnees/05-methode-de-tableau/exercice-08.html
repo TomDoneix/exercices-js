@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Exercice 07</title>
+    <link rel="stylesheet" href="../../../00-styles/style.css" />
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <hr />
+
+    <p>Ecrivez la fonction sortByName(users) qui obtient un tableau d’objets avec la propriété name et le trie.</p>
+    <p>Par exemple :</p>
+
+    <pre>
+      let john = { name: "John", age: 25 };
+      let pete = { name: "Pete", age: 30 };
+      let mary = { name: "Mary", age: 28 };
+
+      let arr = [ john, pete, mary ];
+
+      sortByName(arr);
+
+      // maintenant: [john, mary, pete]
+      alert(arr[0].name); // John
+      alert(arr[1].name); // Mary
+      alert(arr[2].name); // Pete
+    </pre>
+
+    <p>
+      <a href="https://fr.javascript.info/task/sort-objects">Trier les objets</a>
+    </p>
+
+    <script>
+      let john = { name: "John", age: 25 };
+      let pete = { name: "Pete", age: 30 };
+      let mary = { name: "Mary", age: 28 };
+
+      let arr = [ john, pete, mary ];
+      console.log( arr );
+
+      function sortByAge(arr) {
+        arr.sort((a, b) => a.age - b.age) 
+      }
+
+
+      sortByAge(arr)
+
+      console.log( arr ) 
+    </script>
+  </body>
+</html>

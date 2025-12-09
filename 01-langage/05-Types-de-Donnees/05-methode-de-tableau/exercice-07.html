@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Exercice 07</title>
+    <link rel="stylesheet" href="../../../00-styles/style.css" />
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <hr />
+
+    <p>Vous avez un tableau d’objets user, chacun ayant name, surname et id.</p>
+    <p>Ecrivez le code pour créer un autre tableau à partir de celui-ci, avec les objets id et fullName, où fullName est généré à partir de name et surname.</p>
+    <p>Par exemple :</p>
+
+    <pre>
+      let john = { name: "John", surname: "Smith", id: 1 };
+      let pete = { name: "Pete", surname: "Hunt", id: 2 };
+      let mary = { name: "Mary", surname: "Key", id: 3 };
+
+      let users = [ john, pete, mary ];
+
+      let usersMapped = /* ... votre code ... */
+
+      /*
+      usersMapped = [
+        { fullName: "John Smith", id: 1 },
+        { fullName: "Pete Hunt", id: 2 },
+        { fullName: "Mary Key", id: 3 }
+      ]
+      */
+
+      alert( usersMapped[0].id ) // 1
+      alert( usersMapped[0].fullName ) // John Smith
+    </pre>
+
+    <p>Donc, en réalité, vous devez mapper un tableau d’objets sur un autre. Essayez d’utiliser => ici. Il y a une petite prise.</p>
+
+
+    <p>
+      <a href="https://fr.javascript.info/task/map-objects">Map en objets</a>
+    </p>
+
+    <script>
+      let john = { name: "John", surname: "Smith", id: 1 };
+      let pete = { name: "Pete", surname: "Hunt", id: 2 };
+      let mary = { name: "Mary", surname: "Key", id: 3 };
+
+      let users = [ john, pete, mary ];
+
+      let usersMapped = "Le code à trouver...";
+
+      console.log( usersMapped );
+    </script>
+  </body>
+</html>
