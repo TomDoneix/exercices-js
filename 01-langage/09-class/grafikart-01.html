@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Pratiquons les class</title>
+    <link rel="stylesheet" href="../../../00-styles/style.css" />
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <hr />
+    <p>Créer la class pour résoudre les console.log</p>
+
+    <p>
+      <a href="https://grafikart.fr/tutoriels/class-tp-2062"
+        >Pratiquons les class</a
+      >
+    </p>
+
+    <script>
+
+
+      // Les résultats dans la console
+
+      const r = new Rectangle(10, 20)
+      console.log(r.perimeter)
+      console.log(r.isValid)
+
+      const r2 = new Rectangle(-10, 20)
+      console.log(r2.isValid)
+      
+      const c = new Square(10)
+      console.log(c.perimeter)
+      console.log(c.isBiggerThan(r))
+    </script>
+  </body>
+</html>

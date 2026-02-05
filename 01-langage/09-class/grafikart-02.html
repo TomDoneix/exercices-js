@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Pratiquons les class</title>
+    <link rel="stylesheet" href="../../../00-styles/style.css" />
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <hr />
+    <p>Dans cet exercice on cherche à gérer une bibliothèque de livres. 
+      <br>On commencera par créer une class qui permettra de représenter un livre (on construira l'objet avec un titre et un nombre de page). On aura ensuite plusieurs propriétés / méthodes utiles
+
+    page, renverra la page courante du livre (1 par défaut)
+    nextPage(), permet de tourner la page et incrémentera la page courante
+    close(), permet de fermer un livre (revenir à la 1ère page)
+
+Ensuite on créera une class Library pour organiser nos livres.
+
+    addBook(), permet de rajouter un livre à la bibliothèque
+    addBooks([]), permet de rajouter plusieurs livres d'un coup (on lui passera un tableau)
+    findBooksByLetter('s'), permet de lister tous les livres qui ont un titre qui commence par la lettre indiquée
+</p>
+
+    <p>
+      <a href="https://grafikart.fr/tutoriels/class-tp-2062"
+        >Pratiquons les class</a
+      >
+    </p>
+
+    <script>
+
+
+      // Les résultats dans la console
+
+      const b = new Book("Seigneur des anneaux", 200);
+      console.log(b.page);
+      b.nextPage();
+      console.log(b.page);
+      b.close();
+      console.log(b.page);
+
+      const l = new Library();
+      l.addBook(b);
+      l.addBooks([
+        new Book("Ready player one", 100),
+        new Book("Oui-oui", 10),
+        new Book("Sillage", 50),
+      ]);
+      console.log(l.findBooksByLetter("S"));
+    </script>
+  </body>
+</html>
